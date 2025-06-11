@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: portal-estudiantes-backend
+    env: java
+    buildCommand: "./mvnw clean install"
+    startCommand: "./mvnw spring-boot:run"
+    envVars:
+      - key: DATABASE_URL
+        value: jdbc:mysql://switchyard.proxy.rlwy.net:59558/railway
+      - key: DATABASE_USERNAME
+        value: root
+      - key: DATABASE_PASSWORD
+        value: WvWgWmNMpdvMbmflltxPxCXHZLFIqQTS
