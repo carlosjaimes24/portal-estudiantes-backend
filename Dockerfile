@@ -7,6 +7,9 @@ WORKDIR /app
 # Copia el proyecto completo al contenedor
 COPY . .
 
+# Entra a la carpeta del proyecto real
+WORKDIR /app/portal-estudiantes
+
 # Da permisos de ejecución a Maven Wrapper
 RUN chmod +x ./mvnw
 
