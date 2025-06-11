@@ -1,9 +1,7 @@
 services:
   - type: web
     name: portal-estudiantes-backend
-    runtime: java
-    buildCommand: "./mvnw clean install"
-    startCommand: "./mvnw spring-boot:run"
+    runtime: docker
     envVars:
       - key: DATABASE_URL
         value: jdbc:mysql://switchyard.proxy.rlwy.net:59558/railway
@@ -11,5 +9,6 @@ services:
         value: root
       - key: DATABASE_PASSWORD
         value: WvWgWmNMpdvMbmfllt...
+
 
 
